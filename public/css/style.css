@@ -1,0 +1,257 @@
+body, html {
+    min-height: 100%;
+    min-height: 100vh;
+    font-family: 'Monstserrat', 'Roboto', sans-serif;
+    background-color: #17f;
+}
+
+.container {
+    width: 100%;
+}
+
+#logo {
+    margin: 18px 0 0 0;
+    position: absolute;
+    font-family: 'Caveat', 'Monstserrat', 'Roboto', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    color: #eee;
+}
+
+/*** BUTTONS ***/
+
+.btn {
+    margin: 0px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: none;
+    color: white;
+    border: 2px solid #eee;
+    border-bottom: 8px solid #eee;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    border-bottom-width: 6px;
+}
+
+.btn:active {
+    border-bottom-width: 4px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn-animate {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-70%); 
+}
+
+#btn-submit {
+    width: 100%;
+}
+#btn-submit:hover {
+    margin-top: 2px;
+}
+#btn-submit:active {
+    margin-top: 4px;
+}
+
+input {
+    border: 2px solid #eee;
+    border-radius: 2px;
+    padding: 10px 15px;
+    background: none;
+    color: #eee;
+    margin: 0;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+#url-encoded {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Monstserrat', 'Roboto', sans-serif;
+    color: #eee;
+    word-break: break-word;
+    padding: 0 14%;
+}
+
+#url-encoded::selection {
+    background-color: #fff;
+    color: #17f;
+}
+
+.msg-input-container {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.submit-container {
+    width: 150px;
+    margin: auto; 
+}
+
+#home-container {
+    position: absolute;
+    top: 30%;
+}
+
+/*** the victim ***/
+
+.msg-recieve {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+    font-size: 2.5em;
+    color: #eee;
+    text-align: center;
+    padding: 0px;
+}
+
+
+.confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
+
+@media only screen and (max-width:770px){
+   .menu {
+        display: none;
+        background-color: #eee;
+        color: #17f;
+        min-width: 300px;
+        width: 100%;
+        margin: auto;
+        padding: 0%;
+        padding-top: 30px;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+    } 
+    
+    .menu .close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 1.5em;
+    }
+    
+
+}
+
+@media only screen and (min-width:770px) and (max-width:1400px){
+    .menu {
+        display: none;
+        background-color: #eee;
+        color: #17f;
+        min-width: 300px;
+        width: 40%;
+        margin: auto;
+        padding: 4%;
+        position: absolute;
+        top: 20%;
+        left: 28%;
+    }
+    
+    .menu .close {
+        float: right;
+        margin-top: -25px;
+        margin-right: -25px;
+        font-size: 1.5em;
+    }
+    
+    body{
+        width: 100%;
+        width: 100vw;
+    }
+
+}
+
+@media only screen and (min-width:1400px){
+    .menu {
+        display: none;
+        background-color: #eee;
+        color: #17f;
+        min-width: 300px;
+        width: 40%;
+        margin: auto;
+        padding: 4%;
+        position: absolute;
+        top: 20%;
+        left: 28%;
+    }
+    
+    .menu .close {
+        float: right;
+        margin-top: -45px;
+        margin-right: -45px;
+        font-size: 1.5em;
+    }
+    
+    body{
+        width: 100%;
+        width: 100vw;
+    }
+}
+
+.menu h2 {
+    padding: 10px;
+    margin: 0px;
+}
+
+.menu p {
+    padding: 12px;
+    margin: 0px;
+}
+
+.menu .created {
+    text-align: center;
+    font-size: .75em;
+    color: #15d;
+    margin-top: 30px;
+}
+
+.menu .close:hover {
+    cursor: pointer;
+}
+
+.open-menu #open-menu {
+    display: inherit;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.open-menu #open-menu {
+    cursor: pointer;
+}
+
+.home #home-button {
+    display: inherit;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}

@@ -1,0 +1,87 @@
+- var status = home
+- var text = resp
+doctype html
+html(lang="en")
+
+    head
+    
+        meta(charset="UTF-8")
+        link(href='https://fonts.googleapis.com/css?family=Caveat:700'
+             rel='stylesheet'
+             type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Montserrat',
+             rel='stylesheet',
+             type='text/css')
+        link(href="../css/normalize.css", type="text/css", rel="stylesheet")
+        link(href="../css/style.css", type="text/css", rel="stylesheet")
+        title mehsagger.io
+        
+    body
+    
+        p#logo mehsagger.io
+        
+        if status
+        
+            div.container#home-container
+            
+            
+                p#url-encoded Get your custom message URL
+                div.msg-input-container
+                    input#msg-input.msg-submit(type="text" name="req-text")
+                div.submit-container
+                    button#btn-submit.btn Generate URL
+
+                    
+            div.open-menu
+                img(src="../img/question.png" id="open-menu")
+            
+            div.menu
+                
+                div#close.close X
+                
+                h2 What is this?
+                p This is an app to send unenthusiatic congratulation messages to your friends and/or enemies!
+                
+                h2 How do I use it? 
+                p Enter your message in the text box and hit the button and it will create you a URL you can send to your friends.
+                
+                h2 Why is this a thing?
+                p Uh-errrr-uuhh-hmmmm, we have no idea...
+                
+                p.created CREATED BY SPATZ & CEREBR4L
+            
+        else    
+        
+            div#container
+            
+                p#res-text.msg-recieve #{text}
+                button#btn-animate.btn.btn-animate PARTY TIME!
+                
+                audio#fanfare(src="../audio/itsaparty.mp3")
+                
+            div.open-menu
+                img(src="../img/question.png" id="open-menu")
+                
+            div.home
+                a(href='https://martian-cerebr4l.c9users.io') 
+                    img(src="../img/home.png" id="home-button")
+                
+            div.menu
+                
+                div#close.close X
+                
+                h2 What is this?
+                p This is an app to send unenthusiatic congratulation messages to your friends and/or enemies!
+                
+                h2 How do I use it? 
+                p Enter your message in the text box and hit the button and it will create you a URL you can send to your friends.
+                
+                h2 Why is this a thing?
+                p Uh-errrr-uuhh-hmmmm, we have no idea...
+                
+                p.created CREATED BY SPATZ & CEREBR4L
+                
+               
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"
+               type="text/javascript")
+        script(src="../js/js.js" type="text/javascript")

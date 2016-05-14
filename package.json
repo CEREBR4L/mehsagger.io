@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "a app to send short messages",
   "main": "server.js",
+  "engines": {
+    "node": "4.4.3",
+    "npm": "2.15.1"
+  },
   "dependencies": {
     "express": "^3.2.6",
     "async": "^0.2.10",

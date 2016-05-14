@@ -140,6 +140,7 @@ input:focus {
         margin: auto;
         padding: 0%;
         padding-top: 30px;
+        padding-bottom: 30px;
         position: absolute;
         top: 0%;
         left: 0%;

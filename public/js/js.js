@@ -132,7 +132,7 @@ $('document').ready(function() {
         if (e.type != 'click' && e.which != 13) {return;}
         var message = $('#msg-input').val();
         if (message) {
-            $('#url-encoded').text('https://martian-cerebr4l.c9users.io/msg/' + encodeURIComponent(encode(message, 3)));
+            $('#url-encoded').text('https://mehssager.herokuapp.com/msg/' + encodeURIComponent(encode(message, 3)));
         }
         else {
             $('#url-encoded').text('Get your custom message URL');

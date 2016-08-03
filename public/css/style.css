@@ -5,6 +5,10 @@ body, html {
     background-color: #17f;
 }
 
+body {
+    overflow: hidden;
+}
+
 .container {
     width: 100%;
 }
@@ -255,4 +259,38 @@ input:focus {
     position: absolute;
     left: 20px;
     top: 20px;
+}
+
+/*** confetti ***/
+
+.confetti {
+    top: -100px;
+    left: 100px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+
+@keyframes confetti_fall {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 100vh;
+  }
+}
+
+@keyframes confetti_rotate {
+  0% {
+    transform: rotate(0deg);
+    width: 10px;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    width: 10px;
+  }
 }
